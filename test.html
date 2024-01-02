@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Download Example</title>
+</head>
+<body>
+    <h1>Click the button to download the Excel file</h1>
+    <form action="/download_excel" method="get">
+        <input type="hidden" name="variable_name" value=output_data>
+        <p>{{output_data}}</p>
+        <button type="submit">Download Excel</button>
+    </form>
+</body>
+</html>ss

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoan One Solution</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="user_filter_form.css">
+
+<!--    <link rel="stylesheet" href="user_filter_form.css">-->
+    <style>
+        body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+form {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.sub-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  color: #555;
+  font-size: 14px;
+}
+
+.form-control-a {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #146d44;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+.form-control-b {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid rgb(153, 3, 3);
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+textarea:focus {
+  outline: none; /* Remove default black outline on focus */
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+    </style>
+</head>
+<body>
+
+  <form action="runscript" method="post" id="form">
+    <div id="group1" class="group">
+        <h4><label for="job level">Job Level</label></h4>
+        <div class="sub-group-a">
+            <textarea name="job_level" cols="50" rows="5" id="string1" autocapitalize="off" class="form-control-a" autofocus=""></textarea>
+        </div>
+        <h4><label for="job function">Job Function</label></h4>
+        <div class="sub-group-a">
+            <textarea name="job_function" cols="50" rows="5" id="string2" autocapitalize="off" class="form-control-a" autofocus=""></textarea>
+        </div>
+        <h4><label for="string">Country</label></h4>
+        <div class="sub-group-a">
+            <textarea name="country" cols="50" rows="5" id="string3" autocapitalize="off" class="form-control-a" autofocus=""></textarea>
+        </div>
+        <h4><label for="string">Company Size</label></h4>
+        <div class="sub-group-a">
+            <textarea name="company_size" cols="50" rows="5" id="string4" autocapitalize="off" class="form-control-a" autofocus=""></textarea>
+        </div>
+        <h4><label for="string">Industry</label></h4>
+        <div class="sub-group-b">
+            <textarea name="industry" cols="50" rows="5" id="string5" autocapitalize="off" class="form-control-b" autofocus=""></textarea>
+        </div>
+        <h4><label for="string">Target Account List</label></h4>
+        <div class="sub-group-a">
+            <textarea name="tal" cols="50" rows="5" id="string6" autocapitalize="off" class="form-control-a" autofocus=""></textarea>
+        </div>
+        <h4><label for="string">Suppression</label></h4>
+        <div class="sub-group-b">
+            <textarea name="suppression" cols="50" rows="5" id="string7" autocapitalize="off" class="form-control-b" autofocus=""></textarea>
+        </div>
+        <h4><label for="string">Email</label></h4>
+        <div class="sub-group-b">
+            <textarea name="email" cols="50" rows="5" id="string8" autocapitalize="off" class="form-control-b" autofocus=""></textarea>
+        </div>
+        <h4><label for="string">Job Title Link</label></h4>
+        <div class="sub-group-b">
+            <textarea name="job_title_link" cols="50" rows="5" id="string9" autocapitalize="off" class="form-control-b" autofocus=""></textarea>
+        </div>
+        <h4><label for="string">First Name Last Name Domain</label></h4>
+        <div class="sub-group-b">
+            <textarea name="first_last_domain" cols="50" rows="5" id="string10" autocapitalize="off" class="form-control-b" autofocus=""></textarea>
+        </div>
+        <h4><label for="string">First Name Last Name Company</label></h4>
+        <div class="sub-group-b">
+            <textarea name="first_last_company" cols="50" rows="5" id="string11" autocapitalize="off" class="form-control-b" autofocus=""></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+        <button>Logout</button>
+    </div>
+  </form>
+</body>
+</html>
+
+
